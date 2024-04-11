@@ -1,6 +1,7 @@
 plugins {
-    alias(libs.plugins.androidApplication)
-    alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("com.android.application")
+    id("kotlin-android")
+    id("kotlin-kapt")
 }
 
 android {
@@ -47,6 +48,10 @@ dependencies {
     // Navigation Component
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
+
+    // Dependency Injection with Dagger
+    implementation("com.google.dagger:dagger:2.51.1")
+    kapt("com.google.dagger:dagger-compiler:2.51.1")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
