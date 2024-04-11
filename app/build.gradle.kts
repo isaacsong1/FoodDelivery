@@ -38,6 +38,10 @@ android {
 }
 
 dependencies {
+    // Backend: Ktor
+    implementation("io.ktor:ktor-server-netty:2.3.10")
+    implementation("io.ktor:ktor-gson:2.3.10")
+
     // ViewModel and LiveData
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
