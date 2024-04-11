@@ -44,6 +44,10 @@ dependencies {
     // DataBinding
     implementation("androidx.databinding:databinding-runtime:4.0.1")
 
+    // Navigation Component
+    implementation("androidx.navigation:navigation-fragment-ktx:2.4.0")
+    implementation("androidx.navigation:navigation-ui-ktx:2.4.0")
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
