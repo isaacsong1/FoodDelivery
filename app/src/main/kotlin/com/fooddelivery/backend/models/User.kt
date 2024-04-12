@@ -17,5 +17,7 @@ data class User(
             return BCrypt.hashpw(password, BCrypt.gensalt())
         }
     }
-
+    fun checkPassword(password: String): Boolean {
+        return BCrypt.checkpw(password, passwordHash)
+    }
 }
