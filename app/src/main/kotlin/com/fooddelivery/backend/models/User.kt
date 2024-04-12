@@ -4,6 +4,6 @@ import org.mindrot.jbcrypt.BCrypt
 
 data class User(
     val email: String,
-    val password: String,
+    private val passwordHash: String,
     val location: String
 )
