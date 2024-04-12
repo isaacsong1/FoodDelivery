@@ -1,7 +1,8 @@
 plugins {
-    id("com.android.application")
+//    id("com.android.application")
     id("kotlin-android")
     id("kotlin-kapt")
+    id("io.ktor.plugin") version "2.3.10"
 }
 
 android {
@@ -39,8 +40,8 @@ android {
 
 dependencies {
     // Backend: Ktor
-    implementation("io.ktor:ktor-server-netty:2.3.10")
-    implementation("io.ktor:ktor-gson:2.3.10")
+    implementation("io.ktor:ktor-server-core")
+    implementation("io.ktor:ktor-server-netty")
 
     // Bcrypt
     implementation("org.mindrot:jbcrypt:0.4")
